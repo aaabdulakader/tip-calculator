@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <script src="script.js"></script>
+    -->
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+
+    <main class="container">
+      <section class="calc">
+        <div class="calc-column">
+          <p class="bill-title">Bill</p>
+          <input class="billAmt" type="text"placeholder='0' />
+          <p class="tip-select">Select Tip %</p>
+          <div class="tip-box">
+            <button class="btn btn5" value=".05">5%</button>
+            <button class="btn btn10" value=".10">10%</button
+            ><button class="btn btn15" value=".15">15%</button>
+            <button class="btn btn25" value=".25">25%</button
+            ><button class="btn btn50" value=".50">50%</button>
+            <input type="text" class="custom" placeholder=" Custom" />
+          </div>
+
+          <div class="people">
+            <div class="">
+              <p class="numofpeople-title">Number of People</p>
+              <p class="error">Can't be zero</p>
+            </div>
+            <input type="text" class="nop" placeholder="0"/>
+
+
+          </div>
+        </div>
+        <div class="calc-column column2">
+          <div class="tip-sec">
+            <div>
+              <p class="tip-title">Tip Amount</p>
+              <p class="per">/ person</p>
+            </div>
+            <p class="tip">$4.27</p>
+          </div>
+          <div class="total-box">
+            <div>
+              <p class="total-title">Total</p>
+              <p class="per">/ person</p>
+            </div>
+            <p class="total">$32.79</p>
+          </div>
+          
+          <button type="reset" class="reset">RESET</button>
+          <!-- <button class="cal reset">Calculate</button> -->
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
